@@ -251,31 +251,71 @@ pane_frames false
 // For more examples, see: https://github.com/zellij-org/zellij/tree/main/example/themes
 // Once these themes are defined, one of them should to be selected in the "theme" section of this file
 //
-// themes {
-//     dracula {
-//         fg 248 248 242
-//         bg 40 42 54
-//         red 255 85 85
-//         green 80 250 123
-//         yellow 241 250 140
-//         blue 98 114 164
-//         magenta 255 121 198
-//         orange 255 184 108
-//         cyan 139 233 253
-//         black 0 0 0
-//         white 255 255 255
-//     }
-// }
+themes {
+    dracula {
+        fg 248 248 242
+        bg 40 42 54
+        red 255 85 85
+        green 80 250 123
+        yellow 241 250 140
+        blue 98 114 164
+        magenta 255 121 198
+        orange 255 184 108
+        cyan 139 233 253
+        black 0 0 0
+        white 255 255 255
+    }
+    gruvbox-dark {
+        fg "#D5C4A1"
+        bg "#282828"
+        black "#3C3836"
+        red "#CC241D"
+        green "#98971A"
+        yellow "#D79921"
+        blue "#3C8588"
+        magenta "#B16286"
+        cyan "#689D6A"
+        white "#FBF1C7"
+        orange "#D65D0E"
+    }
+    vitesse {
+        fg "#bebaab"
+        bg "#121212"
+        red "#cb7676"
+        green "#4d9375"
+        yellow "#e6cc77"
+        blue "#6394bf"
+        magenta "#d9739f"
+        orange "#d4976c"
+        cyan "#5eaab5"
+        black "#111111"
+        white "#ffffff"
+    }
+    custom-dark {
+        fg "#4d4c4c"
+        bg "#212133"
+        black "#212133"
+        red "#CC241D"
+        green "#98971A"
+        yellow "#D79921"
+        blue "#3C8588"
+        magenta "#B16286"
+        cyan "#689D6A"
+        white "#4d4c4c"
+        orange "#D65D0E"
+    }
+}
 
 // Choose the theme that is specified in the themes section.
 // Default: default
 //
-theme "catppuccin-mocha"
+// theme "catppuccin-mocha"
+theme "custom-dark"
 
 // The name of the default layout to load on startup
 // Default: "default"
 //
-// default_layout "compact"
+default_layout "mycompact"
 
 // Choose the mode that zellij uses when starting up.
 // Default: normal
@@ -337,7 +377,8 @@ theme "catppuccin-mocha"
 
 // The folder in which Zellij will look for layouts
 //
-// layout_dir "/path/to/my/layout_dir"
+// layout_dir "~/.config/zellij/layouts"
+layout_dir "/home/black-pearl/.config/zellij/layouts"
 
 // The folder in which Zellij will look for themes
 //
